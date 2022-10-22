@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos JavaScript</title>
+</head>
+<body>
+    <h1>Fundamentos JavaScript</h1>
+</body>
+<script>
+    /* Variables */
+    /* var variable1 = "Hola, te saluda la Variable";
+    let variable2 = "Hola te saluda una Variable de Bloque"
+    console.log(variable1); */
+    /* Const */
+   /*  let a;
+    const PI = 3.1416;
+    console.log(PI); */
+    /* Ejemplo de LET */
+    /* let objeto = {
+        nombre: "Manuel",
+        edad: 24
+    }
+    console.log(objeto);
+    let colores = ["Blanco","Azul","Rojo"];
+    console.log(colores);
+    /* Ejemplo agregando un color*/
+  /*   colores.push("Amarillo")
+    console.log(colores); */
+    /* Ejemplo Correo */
+   /*  objeto.correo = "mana.diaz@duocuc.cl" */
+    /* Cadenas de Texto aka Strings */
+    /*  let nombre = "Manuel";
+    let apellido = 'Diaz'; */
+   /*  let saludo = new String("Hola Mundo"); */
+    //Concatenación
+   /*  let saludo = "Hola mi nombre es " + nombre + " " + apellido + ".";
+    console.log(saludo); */
+
+    //Interpolción de variables
+    //Template String
+   /*  let saludo2 = `Hola mi nombre es ${nombre} ${apellido}.`;
+    console.log(saludo2); */
+   /*  let ul2 = `
+      <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ul>
+    `;
+    console.log(ul2); */
+    /* Numeros */
+    /* Diferentes formas de trabajar con console.log */
+/*     let a = 2;
+    let b = new Number(1);
+    let c = 7.19;
+    let d = "5.6";
+    console.log(a, b);
+    console.log(c.toFixed(1));
+    console.log(c.toFixed(5));
+    console.log(parseInt(c));
+    console.log(parseFloat(c));
+    console.log(typeof c, typeof d);
+    console.log(a + b);
+    console.log(c + parseInt(d));
+    console.log(c + parseFloat(d));
+    console.log(c + Number.parseInt(d));
+    console.log(c + Number.parseFloat(d)); */
+    /* Booleans  */
+/*     let verdadero = true;
+    let falso = false;
+    let v = Boolean(true);
+    let f = Boolean(false);
+    console.log(verdadero, falso, v, f);
+    console.log(typeof verdadero, typeof falso);
+    console.log(Boolean(0));
+    console.log(Boolean(-7));
+    console.log(Boolean(""));
+    console.log(Boolean(" ")); */
+
+    /* undefined, null & NaN  */
+    //undefined indica que no se ha inicializado una variable y que el valor está ausente
+/*     let indefinida;
+    console.log(indefinida); 
+
+    //null es un valor especial que indica la ausencia de un valor
+    let nulo = null;
+    console.log(null); 
+
+    //NaN - Not a Number
+    let noEsUnNumero = "hola" * 3.7;
+    console.log(noEsUnNumero); */
+
+  /*   Arreglos (Arrays) */
+/*     const a = [];
+        const b = [1, true, "Hola", ["A", "B", "C", [1, 2, 3]]];
+        console.log(a);
+        console.log(b);
+        console.log(b.length);
+        console.log(b[2]);
+        console.log(b[0]);
+        console.log(b[3]);
+        console.log(b[3][2]);
+        console.log(b[3][3][0]);
+        const c = Array.of("X", "Y", "Z", 9, 8, 7);
+        console.log(c);
+        const d = Array(100).fill(false);
+        console.log(d);
+        const e = new Array();
+        console.log(e);
+        const f = new Array(1, 2, 3, true, false);
+        console.log(f);
+        const colores = ["Rojo", "Verde", "Azul"];
+        console.log(colores);
+        colores.push("Negro");
+        console.log(colores);
+        colores.pop();
+        console.log(colores);
+        colores.forEach(function (el, index) {
+          console.log(`<li id="${index}">${el}</li>`);
+        }); */
+        /* Objetos  */
+        /* let a = new String("Hola a todos desde mi Plan de Mejora"); */
+        //console.log(a)
+ /*        const b = {}
+        console.log(b);
+        const c = new Object();
+        console.log(c);
+
+        const jon = {
+          nombre: "Manuel",
+          apellido: "Diaz",
+          edad: 24,
+          pasatiempos: ["Correr", "Programar", "Volar Drone"],
+          soltero: false,
+          contacto: {
+            email: "mana.diaz@duocuc.cl",
+            twitter: "@mana.diaz",
+            movil: "+56945869887"
+          },
+          saludar: function () {
+            console.log(`Hola a todos!`)
+          },
+          decirMiNombre: function () {
+            console.log(`Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años y me puedes seguir como ${this.contacto.twitter} en twitter.`)
+          }
+        }
+        console.log(jon);
+        console.log(jon["nombre"]);
+        console.log(jon["apellido"]);
+        console.log(jon.nombre);
+        console.log(jon.apellido);
+        console.log(jon.edad);
+        console.log(jon.soltero);
+        console.log(jon.pasatiempos);
+        console.log(jon.pasatiempos[1]);
+        console.log(jon.contacto);
+        console.log(jon.contacto.twitter);
+        jon.saludar();
+        jon.decirMiNombre();
+        console.log(Object.keys(jon));
+        console.log(Object.values(jon));
+        console.log(jon.hasOwnProperty("nombre"));
+        console.log(jon.hasOwnProperty("nacimiento")); */
+        
+        
+       /*  Objetos */
+  /*       let a = 5 + (5 - 10) * 3;
+        let modulo = 5 % 2;
+        console.log(a);
+        console.log(modulo);
+        console.log(8 > 9);
+        console.log(9 > 8);
+        console.log(8 >= 9);
+        console.log(9 >= 8);
+        console.log(7 < 7);
+        console.log(7 <= 7);  */
+
+    /*   Condicionales  */
+/*     let edad = 7;
+    if (edad > 17) {
+      console.log("Eres mayor de Edad");
+    } else {
+      console.log("Eres menor de Edad");
+    }
+    if (edad >= 18) {
+      console.log("Eres mayor de Edad");
+    } else {
+      console.log("Eres menor de Edad");
+    }
+    if (edad < 18) {
+      console.log("Eres menor de Edad");
+    } else {
+      console.log("Eres mayor de Edad");
+    }
+    if (edad <= 17) {
+      console.log("Eres menor de Edad");
+    } else {
+      console.log("Eres mayor de Edad");
+    }  */
+
+    /* switch - case */
+
+    /*
+    domingo -0
+    lunes - 1
+    martes - 2
+    miércoles - 3
+    jueves - 4
+    viernes - 5
+    sábado - 6
+    */
+/*     let dia = 5;
+    switch (dia) {
+      case 0:
+        console.log("Domingo");
+        break;
+      case 1:
+        console.log("Lunes");
+        break;
+      case 2:
+        console.log("Martes");
+        break;
+      case 3:
+        console.log("Miércoles");
+        break;
+      case 4:
+        console.log("Jueves");
+        break;
+      case 5:
+        console.log("Viernes");
+        break;
+      case 6:
+        console.log("Sábado");
+        break;
+      default:
+        console.log("El día no existe");
+        break;
+    }   */ 
+    
+</script>
+</html>
